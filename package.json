@@ -5,6 +5,10 @@
     "type": "git",
     "url": "git+https://github.com/rcausey/gen-dev-id.git"
   },
+  "dependencies": {
+    "randomstring": "^1.1.5",
+    "yargs": "^6.6.0"
+  },
   "bin": {
     "gen-dev-id": "bin/gen-dev-id.js"
   }
