@@ -1,0 +1,14 @@
+{
+  "name": "@rcausey/gen-dev-id",
+  "version": "1.0.0",
+  "dependencies": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcausey/gen-dev-id.git"
+  },
+  "bin": {
+    "gen-dev-id": "gen-dev-id.js"
+  }
+}
