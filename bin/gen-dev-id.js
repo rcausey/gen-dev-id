@@ -2,9 +2,9 @@
 
 const yargs = require('yargs');
 const argv = yargs
-    .usage('Usage: $0 -o [output path] -len [num]')
+    .usage('Usage: $0 -o [output path] -l [num]')
     .demandOption(['o'])
-    .default('len', 5)
+    .default('l', 5)
     .argv;
 
 const process = require('process');
@@ -18,7 +18,7 @@ const id = fs.existsSync(outputPath)
   ? fs.readFileSync(outputPath)
     .toString().replace(/\s*/g, '') // Remove whitespace added by editors
   : randomstring.generate({
-    length: argv.len,
+    length: argv.l,
     charset: '0123456789abcdefghijklmnopqrstuvwxyz',
   });
 
